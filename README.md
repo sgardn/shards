@@ -33,3 +33,15 @@ curl is a command line tool used to send simple http requests
 https://ec.haxx.se/http/http-post
 
 try using this and posting to localhost:5000 to do some simpler local testing
+
+### chrome extension
+
+Based off https://developer.chrome.com/extensions/getstarted
+
+## To load
+
+- open chrome and go to chrome://extensions/
+- select "Load unpacked" and navigate to this folder + /extension
+- profit
+- click the reload circle arrow button to reload any changes you make while developing
+- it should add a button in the toolbar that is only active while at "bridgebase.com"
