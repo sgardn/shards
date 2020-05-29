@@ -45,3 +45,13 @@ Based off https://developer.chrome.com/extensions/getstarted
 - profit
 - click the reload circle arrow button to reload any changes you make while developing
 - it should add a button in the toolbar that is only active while at "bridgebase.com"
+
+
+## working with git
+- `git pull` -> update local branch with changes in the repository
+
+### making local changes
+- `git status` -> see the state of staged and unstaged changes
+- `git add .` -> stage files you have modified
+- `git commit -m "my message here"` -> create a commit (version) that includes changes you've added with `git add`
+- `git push origin master` -> push your local changes (that are commited) to the repo for others to see
