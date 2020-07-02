@@ -1,12 +1,10 @@
 function getPartnerSignals(cards, leads) {
   var i;   let hearts = [String.fromCharCode(9829)];  let spades = [String.fromCharCode(9824)];  let clubs = [String.fromCharCode(9827)]; let diams = [String.fromCharCode(9830)];
-  // console.log("cards", cards) ;
-  // console.log("leads", leads) ;
+
   let justSuits = [] ;
   for (i = 0; i < cards.length ; i++) {
     justSuits.push(leads[i][0])
-    // console.log(cards[i],leads[i], cards[i].charCodeAt(0), leads[i].charCodeAt(0)) ;
-    // console.log(leads[i].charCodeAt(0) == 9824, cards[i].charCodeAt(0) == 9824) ;
+
     if (leads[i].charCodeAt(0) == 9824 ) {
       if (cards[i].charCodeAt(0) == 9824) {
         spades.push(cards[i][1])
@@ -36,9 +34,7 @@ function getPartnerSignals(cards, leads) {
       }
     }
   }
-  // console.log(justSuits);
-  // console.log( spades[0] + " " + spades[1] + " " + spades[2], "   " + hearts[0] + " " + hearts[1] + " " + hearts[2] + " " + hearts[3], "   " + diams[0] + " " + diams[1] + " " + diams[2])
-  // console.log( spades.slice(0,3), hearts.slice(0,4), diams.slice(0,3), clubs.slice(0,3)) ;
+
   return [spades, hearts, diams, clubs];
 }
 
